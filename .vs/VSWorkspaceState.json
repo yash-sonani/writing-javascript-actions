@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\.github\\workflows\\hello-world"
+  ],
+  "SelectedNode": "\\.github\\workflows\\hello-world\\package-lock.json",
+  "PreviewInSolutionExplorer": false
+}
