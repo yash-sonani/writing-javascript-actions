@@ -24,7 +24,7 @@ jobs:
   action:
     runs-on: ubuntu-latest
 
-    stpes:
+    steps:
       - uses: actions/checkout@v1
 
       - name: hello-action
