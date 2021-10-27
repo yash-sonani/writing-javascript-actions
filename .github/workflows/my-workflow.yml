@@ -1,6 +1,14 @@
 name: JS Actions
 
-on: [push]
+on: 
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'  
 
 jobs:
   action:
@@ -13,4 +21,4 @@ jobs:
     - name: hello-action
       uses: ./.github/actions/hello-world
       with:
-        first-greeting: "Learning Lab User ${{ github.run_number }}"
+        first-greeting: "Learning Lab User ${{ github.event.inputs.logLevel }}"
