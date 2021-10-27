@@ -23,3 +23,9 @@ jobs:
         with:
           repo-token: ${{secrets.GITHUB_TOKEN}}
           joke: ${{steps.jokes.outputs.joke-output}}
+
+      - name: GitHub Run Number
+        run: echo "GITHUB_RUN_NUMBER:= $GITHUB_RUN_NUMBER"
+
+      - name: GitHub Action URL
+        run: echo "GitHub Action URL:= $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
