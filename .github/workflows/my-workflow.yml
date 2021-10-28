@@ -9,6 +9,8 @@ on:
         default: 'warning'
       tags:
         description: 'Test scenario tags'  
+  push:
+    branches: hello-world
 
 jobs:
   action:
