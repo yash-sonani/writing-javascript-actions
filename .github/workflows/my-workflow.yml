@@ -27,4 +27,4 @@ jobs:
         first-greeting: "Learning Lab User ${{ github.event.inputs.logLevel }}"
 
     - name: debug
-      run: echo "CR Number:= ${{ steps.hw1.output.number }}"
+      run: echo "CR Number:= ${{ steps.hw1.outputs.number }}"
