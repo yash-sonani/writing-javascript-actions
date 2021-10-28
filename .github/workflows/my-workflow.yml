@@ -19,6 +19,10 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: hello-action
+      id: hw1
       uses: ./.github/actions/hello-world
       with:
         first-greeting: "Learning Lab User ${{ github.event.inputs.logLevel }}"
+
+    - name: debug
+      run: echo "CR Number:= ${{ steps.hw1.output.number }}"
