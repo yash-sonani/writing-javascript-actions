@@ -13,9 +13,10 @@ on:
 
 jobs:
   say_hello:
-    runs-on: ubuntu-latest
+    runs-on: 3P9HP13
     steps:
       - run: |
           echo "Hello ${{ github.event.inputs.name }}!"
           echo "- in ${{ github.event.inputs.home }}!"
-          ls -lrth
+          hostname
+          ipconfig
